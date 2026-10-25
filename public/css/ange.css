@@ -1,0 +1,458 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url('/src/img/rhu.png');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 120px);
+    position: relative;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+}
+/* Buttons */
+.nav-button {
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.register-button {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    background-color: #10B981;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.register-button:hover {
+    background-color: #059669;
+}
+.register-button i {
+    margin-left: 0.5rem;
+    background-color: white;
+    color: #10B981;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.registernow-button {
+    background-color: #00C853;
+    color: white;
+    padding: 0.875rem 2rem 0.875rem 2rem;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.registernow-button::after {
+    content: '→';
+    background-color: #1a237e;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+}
+.registernow-button:hover {
+    background-color: #00B848;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.registernow-button:hover::after {
+    transform: translateX(3px);
+}
+/* Footer */
+footer {
+    background-color: #3B82F6;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+/* Registration form */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.text-foreground {
+    color: #333;
+}
+.text-muted-foreground {
+    color: #666;
+}
+.border-border {
+    border-color: #ccc;
+}
+.border-muted {
+    border-color: #bbb;
+}
+
+/* Base styles */
+:root {
+    --blue-700: #1d4ed8;
+    --blue-800: #1e40af;
+    --green-500: #22c55e;
+    --green-600: #16a34a;
+  }
+  
+  /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Flexbox utilities */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-none {
+    flex: none;
+  }
+  
+  .flex-grow {
+    flex-grow: 1;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .items-start {
+    align-items: flex-start;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  /* Spacing */
+  .space-x-2 > * + * {
+    margin-left: 0.5rem;
+  }
+  
+  .space-x-8 > * + * {
+    margin-left: 2rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  .mb-12 {
+    margin-bottom: 3rem;
+  }
+  
+  /* Typography */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  /* Background colors */
+  .bg-white {
+    background-color: white;
+  }
+  
+  .bg-blue-700 {
+    background-color: var(--blue-700);
+  }
+  
+  .bg-blue-800 {
+    background-color: var(--blue-800);
+  }
+  
+  .bg-blue-500 {
+    background-color: #3b82f6;
+  }
+  
+  /* Width and height utilities */
+  .w-full {
+    width: 100%;
+  }
+  
+  .w-16 {
+    width: 4rem;
+  }
+  
+  .h-16 {
+    height: 4rem;
+  }
+  
+  .w-1\/3 {
+    width: 33.333333%;
+  }
+  
+  .h-24 {
+    height: 6rem;
+  }
+  
+  .w-auto {
+    width: auto;
+  }
+  
+  /* Images */
+  .h-6 {
+    height: 1.5rem;
+  }
+  
+  .h-8 {
+    height: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .sm\:h-8 {
+      height: 2rem;
+    }
+  }
+  
+  /* Navigation */
+  .nav-button {
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Profile picture */
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Slideshow */
+  .slideshow-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slideshow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+  }
+  
+  .slideshow-image.active {
+    opacity: 1;
+  }
+  
+  /* Font Awesome Icons */
+  .fas {
+    font-family: "Font Awesome 6 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+  }
+  
+  .fa-bell::before {
+    content: "\f0f3";
+  }
+  
+  /* Rounded utilities */
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  /* Transitions */
+  .transition {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+  
+  /* Hover states */
+  .hover\:bg-green-600:hover {
+    background-color: var(--green-600);
+  }
+
+/* Preloader Section */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  transition: opacity 0.5s ease;
+}
+
+#preloader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(223, 220, 215, 0.9); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+/* Rotating Logo Animation */
+.preloader-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: rotateLogo 2s linear infinite; /* Apply rotation here */
+  position: relative;
+  z-index: 2;
+}
+
+/* Rotation Animation */
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Preloader Fade Out */
+#preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Optional: Add styles for the background overlay (optional) */
+#preloader::before {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+}
+

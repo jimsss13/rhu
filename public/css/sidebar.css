@@ -1,0 +1,17 @@
+.logo-header {
+    background-color: #ffffff !important;
+}
+
+.active{
+    background-color: white !important;
+}
+
+.gg-menu-right,
+.gg-menu-left,
+.gg-more-vertical-alt {
+    color: rgb(0, 0, 0);
+}
+
+/* .fa-home::before {
+    color: rgb(140, 140, 140) !important;
+} */
